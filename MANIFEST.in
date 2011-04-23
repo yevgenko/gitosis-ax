@@ -1,0 +1,4 @@
+include COPYING
+include README.rst
+include example.conf
+recursive-include gitosis/templates *
