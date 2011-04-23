@@ -33,9 +33,9 @@ def haveAccess(config, user, mode, path):
             ))
         path = basename
 
-    for groupname in group.getMembership(config=config, user=user):
+    for groupname in group.getMembership(config=config, user=user, mode=mode):
         try:
-            repos = config.get('group %s' % groupname, mode)
+            repos = config.get('group %s' % groupname, 'writable')
         except (NoSectionError, NoOptionError):
             repos = []
         else:
