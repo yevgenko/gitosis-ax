@@ -21,7 +21,7 @@ setup(
     version = "0.2",
     packages = find_packages(),
 
-    author = "Chrstian Albrecht"
+    author = "Chrstian Albrecht",
     author_email = "cal@albix.de",
     description = "software for hosting git repositories",
     long_description = """
